@@ -1,1 +1,1 @@
-### Sample App demonstrating JAX RS API using Spring Framework using Maven multi module structure
+### Sample App demonstrating JAX RS API + Spring Framework + Maven multi module structure
