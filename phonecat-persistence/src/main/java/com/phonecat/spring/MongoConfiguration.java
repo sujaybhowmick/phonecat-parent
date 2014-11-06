@@ -8,11 +8,13 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.authentication.UserCredentials;
 import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 /**
  * Created by sujay on 03/11/14.
  */
 @Configuration
+@EnableMongoRepositories(basePackages = {"com.phonecat.repository"})
 public class MongoConfiguration {
 
     private static Logger log = LoggerFactory.getLogger(MongoConfiguration.class);

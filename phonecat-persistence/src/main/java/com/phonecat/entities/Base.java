@@ -1,7 +1,5 @@
 package com.phonecat.entities;
 
-import com.mongodb.BasicDBObject;
-
 import java.util.Date;
 
 /**

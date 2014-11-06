@@ -9,7 +9,7 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
  * Created by sujay on 06/11/14.
  */
 @Configuration
-@PropertySource("classpath:mongo-${APP_ENV:default}.properties")
+@PropertySource("classpath:mongo-${APP_ENV:local}.properties")
 public class PropertyPlaceholderConfiguration {
 
     @Bean

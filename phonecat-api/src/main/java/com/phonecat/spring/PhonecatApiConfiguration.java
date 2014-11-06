@@ -1,6 +1,5 @@
 package com.phonecat.spring;
 
-import com.phonecat.repository.PhoneRepository;
 import org.springframework.context.annotation.Configuration;
 
 /**
