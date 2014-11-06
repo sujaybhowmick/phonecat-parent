@@ -9,6 +9,6 @@ import java.lang.annotation.RetentionPolicy;
  * Created by sujay on 03/11/14.
  */
 @Retention(RetentionPolicy.RUNTIME)
-@Import({MongoConfiguration.class, PhonecatConfiguration.class})
+@Import({MongoConfiguration.class, PropertyPlaceholderConfiguration.class})
 public @interface EnablePhonecatPersistence {
 }

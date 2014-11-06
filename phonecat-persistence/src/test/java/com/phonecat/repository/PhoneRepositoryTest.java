@@ -2,14 +2,11 @@ package com.phonecat.repository;
 
 import com.phonecat.entities.Phone;
 import com.phonecat.spring.MongoConfiguration;
-import com.phonecat.spring.PhonecatConfiguration;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
-import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -17,8 +14,7 @@ import java.util.List;
 
 import static org.junit.Assert.*;
 
-@ContextConfiguration(classes = {MongoConfiguration.class,
-                        PhonecatConfiguration.class})
+@ContextConfiguration(classes = {MongoConfiguration.class})
 @RunWith(SpringJUnit4ClassRunner.class)
 public class PhoneRepositoryTest {
 
