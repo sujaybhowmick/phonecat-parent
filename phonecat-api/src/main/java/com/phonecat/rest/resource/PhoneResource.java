@@ -1,8 +1,8 @@
 package com.phonecat.rest.resource;
 
 import com.phonecat.entities.Phone;
+import com.phonecat.logging.Logger;
 import com.phonecat.repository.PhoneRepository;
-import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -19,13 +19,14 @@ import java.util.List;
 @Path("/phone")
 @Produces(MediaType.APPLICATION_JSON)
 public class PhoneResource {
-    private static final Logger log =
+    private static final org.slf4j.Logger log =
             LoggerFactory.getLogger(PhoneResource.class);
 
     @Autowired
     private PhoneRepository phoneRepository;
 
     @GET
+    @Logger
     public Response getPhones(){
         List<Phone> phones = phoneRepository.findAll();
         return Response.ok(phones).build();

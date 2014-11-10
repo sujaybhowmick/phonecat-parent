@@ -1,6 +1,7 @@
 package com.phonecat;
 
 import com.google.common.collect.ImmutableSet;
+import com.phonecat.logging.LoggingFeature;
 import com.phonecat.rest.resource.PhoneResource;
 
 import javax.ws.rs.core.Application;
@@ -19,6 +20,7 @@ public class PhonecatApplication extends Application {
 
     @Override
     public Set<Class<?>> getClasses() {
-        return ImmutableSet.<Class<?>> of(PhoneResource.class);
+        return ImmutableSet.<Class<?>> of(PhoneResource.class,
+                LoggingFeature.class);
     }
 }
