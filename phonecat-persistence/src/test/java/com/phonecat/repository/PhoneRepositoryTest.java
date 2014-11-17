@@ -1,7 +1,7 @@
 package com.phonecat.repository;
 
 import com.phonecat.entities.Phone;
-import com.phonecat.spring.MongoConfiguration;
+import com.phonecat.com.phonecat.mongo.MongoConfiguration;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

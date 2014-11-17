@@ -1,4 +1,4 @@
-package com.phonecat.spring;
+package com.phonecat.com.phonecat.mongo;
 
 import com.mongodb.MongoClient;
 import org.slf4j.Logger;
